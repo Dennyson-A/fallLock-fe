@@ -29,6 +29,11 @@
   width: 20%;
 }
 
+.issued-header .issued-btn:hover {
+  background-color: black;
+  color: white;
+}
+
 .issued-main {
     padding: 2rem;
   }

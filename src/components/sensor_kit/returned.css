@@ -29,6 +29,10 @@
   width: 20%;
 }
 
+.returned-header .returned-btn:hover {
+  background-color: black;
+  color: white;
+}
 
 .issued-main {
     padding: 2rem;
