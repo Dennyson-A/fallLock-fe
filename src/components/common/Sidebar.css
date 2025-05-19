@@ -1,0 +1,88 @@
+/* Sidebar Container */
+.sidebar {
+  position: fixed;
+  top: 80px; /* Adjust based on navbar height */
+  left: 0;
+  width: 270px;
+  height: calc(100vh - 80px);
+  background-color: #fff;
+  padding: 20px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+  border-right: 1px solid #e0e0e0;
+  z-index: 100;
+}
+
+/* Navigation Styles */
+.sidebar nav {
+  flex-grow: 1;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  gap: 10px
+}
+
+/* Sidebar Items */
+.sidebar nav ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar nav ul li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Active State */
+.sidebar nav ul li.active {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.sidebar nav ul li.active a {
+  color: #fff;
+}
+
+/* Link Styles */
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* FontAwesome Icon Styling */
+.sidebar nav ul li svg {
+  font-size: 18px;
+}
+
+/* Logout Button */
+.logout-button {
+  margin-top: auto;
+  padding: 12px 16px;
+  width: 100%;
+  background-color: #4CAF50;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #388e3c;
+}

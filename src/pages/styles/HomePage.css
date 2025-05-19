@@ -1,0 +1,205 @@
+/* General Styles */
+.homepage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Background Slideshow */
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1.5s ease-in-out;
+    z-index: -1;
+}
+
+/* Overlay for Readability */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Header */
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+/* Tamil Nadu Government Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.header-text h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-text p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Main Content */
+.content-container {
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Centered Button Container */
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Ensures it is centered */
+    background: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 8px;
+    width: fit-content; /* Shrinks to fit content */
+    margin: 0 auto; /* Centers horizontally */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers everything inside */
+    text-align: center;
+}
+
+/* Text inside the button */
+.info-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    font-family: "TT Fores Trial", sans-serif;
+}
+
+/* Sign-Up Button */
+.signup-button {
+    background-color: #008000; /* Green */
+    color: white;
+    padding: 6px 12px; /* Reduced padding */
+    border: none;
+    border-radius: 6px; /* Slightly rounded */
+    font-size: 16px;
+    font-family: "Touche", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.signup-button:hover {
+    background-color: #006400; /* Darker Green */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .button-wrapper {
+        flex-direction: row;
+        padding: 8px;
+        gap: 6px;
+    }
+
+    .info-text {
+        font-size: 14px;
+    }
+
+    .signup-button {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 2px;
+    background: #FFFFFF;
+    border-radius: 6px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: fit-content; 
+    height: 50px;
+    gap: 6px;
+}
+/* Text inside Button */
+.button-container span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    width: fit-content;
+    color: #000;
+    padding: 0 25px 0 25px;
+}
+
+/* Sign-Up Button in the Container */
+/* Sign-Up Button */
+.sign-up {
+    background: #16A34A; /* Green */
+    color: white;
+    padding: 0 25px 0 25px;
+    border-radius: 6px; 
+    width: fit-content;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin: 0%;
+}
+
+
+/* Hover Effect */
+.sign-up:hover {
+    background: #139713; /* Darker green */
+}

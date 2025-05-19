@@ -1,0 +1,195 @@
+/* 🟢 Main Container */
+.kit-management-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #f8f9fa;
+}
+
+/* 🟢 Sidebar & Content Layout */
+.content {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* 🟢 Main content area */
+.kit-management-main {
+    flex-grow: 1;
+    background-color: white;
+    padding: 25px;
+    min-height: 100vh;
+    padding-top: 40px;
+    overflow-x: auto;
+}
+
+/* 🟢 Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-box {
+    flex: 1;
+    min-width: 220px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.stat-box:hover {
+    transform: scale(1.05);
+}
+
+.stat-box h2 {
+    margin: 5px 0;
+    color: #00a650;
+}
+
+.red-text {
+    color: red;
+}
+
+/* 🟢 Table Container */
+.table-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* 🟢 Table Styling */
+.kit-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.kit-table th, .kit-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.kit-table th {
+    background: #f9f9f9;
+    font-weight: bold;
+}
+
+/* 🟢 Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.view-btn, .update-btn {
+    padding: 6px 14px;
+    border: 2px solid green;
+    background: white;
+    color: green;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    min-width: 80px;
+}
+
+.view-btn:hover, .update-btn:hover {
+    background: green;
+    color: white;
+}
+
+.table-controls .filter-btn, .export-btn {
+    padding: 8px 14px;
+    border: 2px solid black;
+    color: black;
+    background: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    width: 100px;
+}
+
+.table-controls .filter-btn:hover, .export-btn:hover {
+    background: black;
+    color: white;
+}
+
+/* 🟢 Table Controls */
+.table-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.table-controls .search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.table-controls .controls-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 🟢 Responsive Design */
+@media (max-width: 1024px) {
+    .kit-management-main {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .kit-management-main {
+        margin-left: 0;
+        padding-top: 100px;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .kit-table th, .kit-table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .table-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .controls-group {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+}

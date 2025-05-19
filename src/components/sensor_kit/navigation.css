@@ -1,0 +1,20 @@
+/* 🟢 Tabs */
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.tab {
+    padding: 12px 20px;
+    cursor: pointer;
+    color: gray;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.tab.active {
+    color: black;
+    border-bottom: 3px solid green;
+}
